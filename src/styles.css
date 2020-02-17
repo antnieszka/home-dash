@@ -1,0 +1,44 @@
+#imgContainer {
+    position: relative;
+}
+
+.node {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: deepskyblue;
+}
+
+.node:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.node .dropdown {
+    position: absolute;
+    display: none;
+    background-color: lightgray;
+    padding: 10px 20px;
+    z-index: 1001;
+}
+
+.node .btn {
+    padding: 5px;
+}
+
+.node .name {
+    border-bottom: solid 2px gray;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.node .delete {
+
+}
+
+.node .delete:hover {
+    color: red;
+    cursor: pointer;
+}
